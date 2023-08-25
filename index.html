@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/resetcss.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>GYM</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="navbar navbar-fixed-top qpaque">
+            <div class="container">
+                <div class=" navbar navbar-expand-lg">
+                    <a href="#" class="nav__logo">GymPage</a>
+                    <button id="menuIcon" class="navbar-toggler">
+                        <span class="navbar-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
+                    <div  class=" navbar__list navbar-collapse">
+                        <ul class="menu navbar__nav ml-auto">
+                            <li>
+                                <a href="#home">Trang Chủ</a>
+                            </li>
+                            <li>
+                                <a href="#services">Dịch Vụ</a>
+                            </li>
+                            <li>
+                                <a href="#team">HLV</a>
+                            </li>
+                            <li>
+                                <a href="#faq">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#pricing">Gói</a>
+                            </li>
+                            <li class="btn__GS">
+                                <a href="">Đăng kí ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home section -->
+    <div class="home-section" id="home">
+        <div class="home-section-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 padding-top-120">
+                    <h1>Chào Mừng Bạn Đã Đến Với GymPage</h1>
+                    <p class="hero-text">
+                        Nơi dành riêng cho sức khỏe và thể dục! Chúng tôi tự hào là một điểm đến độc đáo, nơi mà việc chăm sóc cơ thể và tinh thần của bạn là ưu tiên hàng đầu. 
+                    </p>
+                    <ul class="home-benefits">
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Chất lượng và đa dạng chương trình.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Môi trường thân thiện và chuyên nghiệp.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Hỗ trợ từ đội ngũ chuyên gia.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 margin-top-20">
+                    <div class="register-form">
+                        <h3>Đăng Kí Ngay</h3>
+                        <p>Trải nghiệm ngay dịch vụ của chúng tôi</p>
+                        <div>
+                            <p class="register-success" style="display:  none;">
+                                Chúng tôi đã nhận được tin nhắn của bạn và bạn sẽ sớm nhận được phản hồi từ chúng tôi. Cảm ơn!
+                            </p>
+                            <form id="register-form">
+                                <input type="text" class="register-input" required name="register-names" placeholder="Họ Và Tên*">
+                                <input type="email" class="register-input" required name="register-email" placeholder="Email*">
+                                <input type="text" class="register-input" required name="register-phone" placeholder="Số Điện Thoại*">
+                                <input type="submit" class="register-submit" value="Đăng Kí Ngay!">
+                            </form>
+                            <p class="register-terms">Không cần thẻ tín dụng • Không cần cài đặt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+    <div class="section-white" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">
+                        Khám phá dịch vụ của chúng tôi
+                    </h2>
+                    <p class="section-subtitle">
+                        Đa dạng dịch vụ tại GymPage: Chăm sóc toàn diện cho sức khỏe của bạn.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="our-service">
+                        <img src="./assets/img/service1.jpg" alt="">
+                        <h3>
+                            <a href="#">Cardio Exercises</a>
+                        </h3>
+                        <p>Cardio Exercises tại GymPage mang đến sự phát triển sức khỏe tim mạch và tăng cường sức bền. Khám phá ngay để cảm nhận sự sảng khoái sau mỗi buổi tập!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="our-service">
+                        <img src="./assets/img/service2.jpg" alt="">
+                        <h3>
+                            <a href="#">Weight Lifting</a>
+                        </h3>
+                        <p>Tham gia lớp Weight Lifting tại GymPage để trải nghiệm những buổi tập tập trung vào tăng cường sức mạnh và xây dựng cơ bắp. </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="our-service">
+                        <img src="./assets/img/service3.jpg" alt="">
+                        <h3>
+                            <a href="#">Zumba Classes</a>
+                        </h3>
+                        <p>Với âm nhạc đa dạng và các động tác nhảy sôi động, bạn sẽ không chỉ rèn luyện thể lực mà còn cảm nhận niềm vui và sự thư giãn từ mỗi bài tập. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Discover -->
+    <div class="section-grey section-bottom-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Hãy sẵn sàng để khám phá tất cả những lợi ích.</h3>
+                    <p>Với các chương trình tập luyện đa dạng, sự hỗ trợ từ đội ngũ chuyên gia, và môi trường tạo động lực, bạn sẽ có cơ hội nâng cao sức khỏe, tinh thần và thay đổi cuộc sống một cách tích cực. Đến với chúng tôi để bắt đầu hành trình chăm sóc bản thân và thực hiện những mục tiêu mà bạn mong muốn.</p>
+                    <p>Với môi trường thân thiện, chuyên nghiệp và các dịch vụ tập luyện đa dạng, chúng tôi đồng hành cùng bạn trên con đường đạt được sự cân bằng và thăng hoa toàn diện.</p>
+                    <a href="#home" class="btn-red">Đăng Kí Ngay</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/img/discover.jpg" alt="" class="box-shadow top-margins-images width-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./assets/img/service4.jpg" alt="" class="box-shadow width-100 margin-right-15">
+                </div>
+                <div class="col-md-6">
+                    <h4>Phòng tập thể dục giá cả phải chăng nhất trong thành phố.</h4>
+                    <p>Tại GymPage, chúng tôi tự hào mang đến cho bạn một phòng tập thể dục với giá cả phải chăng nhất trong thị trấn. Chúng tôi không chỉ tập trung vào việc cung cấp môi trường tập luyện hiện đại, mà còn đảm bảo rằng mọi người đều có cơ hội tiếp cận các dịch vụ tốt nhất mà không phải vắt kiệt túi tiền.</p>
+                    <ul class="benefits">
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Giá Cả Phải Chăng.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Đội Ngũ Chuyên Gia Chuyên Nghiệp.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Môi Trường Thân Thiện Và Hiện Đại.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Đa Dạng Chương Trình.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <div class="section-grey section-bottom-border" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Gặp gỡ các huấn luyện viên của chúng tôi</h2>
+                    <p class="section-subtitle">
+                        Gặp Gỡ Đội Ngũ Huấn Luyện Viên Chuyên Nghiệp Của Chúng Tôi
+                        <br>
+                        Hỗ Trợ Tận Tâm Cho Hành Trình Sức Khỏe Của Bạn tại GymPage!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-item">
+                        <img src="./assets/img/team1.jpg" alt="" class="team-img width-100">
+                        <h3>CHRISTINA HAWKINS</h3>
+                        <div class="team-info">
+                            <p>Huấn luyện viên thể hình</p>
+                        </div>
+                        <p>Với hơn 10 năm kinh nghiệm trong ngành thể dục và sức khỏe, Christina đã hướng dẫn và truyền cảm hứng cho hàng trăm người thay đổi cuộc sống tập luyện.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-item">
+                        <img src="./assets/img/team2.jpg" alt="" class="team-img width-100">
+                        <h3>ANDRES JOHANSON</h3>
+                        <div class="team-info">
+                            <p>Huấn luyện viên thể hình</p>
+                        </div>
+                        <p>Với kinh nghiệm lâu năm trong ngành và sự đam mê mãnh liệt với thể dục, Andres đã giúp hàng trăm học viên đạt được mục tiêu cá nhân về sức khỏe và vóc dáng.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-item">
+                        <img src="./assets/img/team3.jpg" alt="" class="team-img width-100">
+                        <h3>ALEXANDRA SMITHS</h3>
+                        <div class="team-info">
+                            <p>Huấn luyện viên Zumba</p>
+                        </div>
+                        <p>Với niềm đam mê mãnh liệt với nhảy múa và âm nhạc, Alexandra đã biến các buổi tập Zumba trở thành những trải nghiệm sôi động và vui nhộn cho mọi học viên.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section-white section-bottom-border" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center padding-bottom-10">
+                    <h2 class="section-title">Các câu hỏi thường gặp</h2>
+                    <p class="section-subtitle">Các câu hỏi này thường được hỏi bởi các học viên mới</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="faq-box">
+                        <h5>Làm thế nào để bắt đầu luyện tập tại GymPage?</h5>
+                        <p>Đầu tiên, xác định mục tiêu cá nhân của bạn. Sau đó, tìm hiểu về các chương trình tập luyện phù hợp và thiết lập kế hoạch hợp lý. Cuối cùng, tìm một phòng gym gần bạn và tham gia để bắt đầu.</p>
+                    </div>
+                    <div class="faq-box">
+                        <h5>Tại sao tập thể dục tại phòng gym lại quan trọng?</h5>
+                        <p>Phòng gym cung cấp môi trường tập luyện chuyên nghiệp và đa dạng thiết bị, giúp bạn rèn luyện cơ bắp, nâng cao sức bền và sức khỏe tim mạch. Đồng thời, bạn cũng có cơ hội kết nối với cộng đồng có cùng mục tiêu.</p>
+                    </div>
+                    <div class="faq-box">
+                        <h5>Tôi nên bắt đầu từ đâu khi mới tập gym?</h5>
+                        <p>Bắt đầu bằng việc tham gia buổi hướng dẫn hoặc hỏi huấn luyện viên về chương trình phù hợp với bạn. Bạn có thể bắt đầu từ các bài tập cơ bản để làm quen với thiết bị và tập luyện.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="faq-box">
+                        <h5>Tôi có cần kiến thức về thể dục để đăng ký tập gym?</h5>
+                        <p>Phòng gym thường cung cấp huấn luyện viên chuyên nghiệp sẵn sàng hỗ trợ bạn thiết lập kế hoạch tập luyện và hướng dẫn cách sử dụng các thiết bị tập luyện.</p>
+                    </div>
+                    <div class="faq-box">
+                        <h5>Tôi sẽ được hướng dẫn tập luyện như thế nào?</h5>
+                        <p>Phòng gym thường có huấn luyện viên chuyên nghiệp. Họ sẽ tạo cho bạn kế hoạch tập luyện dựa trên mục tiêu cá nhân và theo dõi tiến bộ của bạn. Họ cũng sẽ hướng dẫn bạn cách sử dụng thiết bị đúng cách để đảm bảo an toàn.</p>
+                    </div>
+                    <div class="faq-box">
+                        <h5>Tôi sẽ được hỗ trợ gì sau khi đăng ký tập gym?</h5>
+                        <p>Sau khi đăng ký, bạn sẽ được hướng dẫn về cách sử dụng các thiết bị, tập luyện đúng kỹ thuật và cách duy trì lối sống lành mạnh. Ngoài ra, bạn cũng có thể tham gia các lớp học nhóm để tạo động lực và kết nối xã hội.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="section-grey section-bottom-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center padding-bottom-20">
+                    <h2 class="section-title">Phòng trưng bày</h2>
+                    <p class="section-subtitle">Khám phá không gian tập luyện hiện đại và đa dạng tại Phòng Trưng Bày Gym - Nơi Hình Thể Tương Lai Bắt Đầu!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/service1.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/service2.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/service3.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/discover.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/service4.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/gym6.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/gym7.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="gallery-insta">
+                        <img src="./assets/img/home.jpg" class="width-100" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Steps -->
+    <div class="section-white section-bottom-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">
+                        Hướng dẫn
+                    </h2>
+                    <p class="section-subtitle">
+                        Bắt đầu ngay hôm nay với ba bước đơn giản.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="step-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="step">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            <h3>Đăng Ký</h3>
+                            <p>Bước chân vào thế giới tập luyện tại GymPage ngay hôm nay bằng cách đăng ký thông tin của bạn. Đội ngũ chuyên nghiệp của chúng tôi sẵn sàng đồng hành cùng bạn trên con đường chinh phục sức khỏe và vóc dáng. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step">
+                            <i class="fa-solid fa-users"></i>
+                            <h3>Chọn Huấn Luyện Viên</h3>
+                            <p>Khi đến với GymPage, bạn có cơ hội lựa chọn và làm việc cùng với đội ngũ huấn luyện viên chuyên nghiệp và tận tâm. Mỗi người có mục tiêu và nhu cầu tập luyện riêng, vì vậy việc chọn huấn luyện viên thích hợp là rất quan trọng.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <h3>Cố Gắng Tập Luyện</h3>
+                            <p>Hãy đặt mục tiêu và cố gắng tập luyện. Dù bận rộ hay khó khăn, việc duy trì thói quen tập luyện sẽ mang lại lợi ích cho sức khỏe và tinh thần của bạn. Mỗi bước tiến nhỏ đều đóng góp vào hành trình thể chất của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing -->
+    <div id="pricing">
+        <div class="section-bg-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center padding-bottom-40">
+                    <h2 class="section-title white-text">Gói Tập Luyện Dành Cho Tất Cả Mọi Người</h2>
+                    <p class="section-subtitle white-text">Tất cả các gói giá đều được hỗ trợ bởi bảo đảm hoàn lại tiền trong 30 ngày.</p>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="price-box">
+                            <ul class="pricing-list">
+                                <li class="price-title">NỀN TẢNG</li>
+                                <li class="price-value">$15</li>
+                                <li class="price-subtitle">Mỗi Ngày</li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Đa dạng bài tập
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Lịch trình linh hoạt
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Hướng dẫn chuyên nghiệp
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Dinh dưỡng cân đối 
+                                </li>
+                                <li class="price-submit">
+                                    <button class="js-buy-ticket">DÙNG THỬ MIỄN PHÍ 15 NGÀY</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-box grey-price-box">
+                            <ul class="pricing-list">
+                                <li class="price-title">TIÊU CHUẨN</li>
+                                <li class="price-value">$99</li>
+                                <li class="price-subtitle">Mỗi Tháng</li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Bao gồm gói Nền Tảng
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Hướng dẫn cá nhân
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Trang thiết bị hiện đại
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Lịch trình linh hoạt và ổn định
+                                </li>
+                                <li class="price-submit">
+                                    <button class="js-buy-ticket">DÙNG THỬ MIỄN PHÍ 15 NGÀY</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-box">
+                            <ul class="pricing-list">
+                                <li class="price-title">CHUYÊN NGHIỆP</li>
+                                <li class="price-value">$199</li>
+                                <li class="price-subtitle">Mỗi Năm</li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Bao gồm gói Tiêu Chuẩn                               </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Linh hoạt và ổn định
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Dịch vụ mở rộng
+                                </li>
+                                <li class="price-text">
+                                    <i class="fa-solid fa-check"></i>
+                                    Tiết kiệm chi phí
+                                </li>
+                                <li class="price-submit">
+                                    <button class="js-buy-ticket">DÙNG THỬ MIỄN PHÍ 15 NGÀY</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container footer-top">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h5>Thông Tin Liên Lạc</h5>
+                    <p>10 Oxford Street, London, UK, E1 1EC</p>
+                    <p><a href="#">the-office@leadpage.co.uk</a></p>
+                    <p>+44 987 654 321</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <h5>Mạng Xã Hội</h5>
+                    <p>Xem dưới đây nơi bạn có thể tìm thấy chúng tôi.</p>
+                    <ul class="footer-social">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-skype"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-link"></i>
+                    <h5>Liên kết hữu ích</h5>
+                    <a class="footer-links" href="#">Chính Sách Cookies Của Chúng Tôi</a>
+                    <a class="footer-links" href="#">Gặp Mặt Trực Tiếp</a>
+                    <a class="footer-links" href="#">Các Điều Khoản Và Điều Kiện</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ticket -->
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <header class="modal-header">
+                <i class="fa-solid fa-ticket"></i>
+                Đăng Kí              
+            </header>
+            <div class="modal-body">
+                <label for="ticket-name" class="modal-lable">
+                    <i class="fa-solid fa-user"></i>
+                    Họ Và Tên
+                </label>
+                <input id="ticket-name" type="text" class="modal-input" placeholder="Tên của bạn*">
+                
+                <label for="ticket-email" class="modal-lable">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </label>
+                <input id="ticket-email" type="email" class="modal-input" placeholder="Địa chỉ email*">
+                
+                <label for="ticket-phone" class="modal-lable">
+                    <i class="fa-solid fa-phone"></i>
+                    Số Điện Thoại
+                </label>
+                <input id="ticket-phone" type="text" class="modal-input" placeholder=" Số Điện Thoại*">
+                
+                <label for="prices" class="modal-price">Gói Bạn Muốn Trải Nghiệm: </label>
+                <select id="prices">
+                    <option value="$15">$15 - Mỗi Ngày</option>
+                    <option value="$99">$99 - Mỗi Tháng</option>
+                    <option value="$199">$199 - Mỗi Năm</option>
+                </select>
+                <button id="buy-ticket">
+                    GỬI <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascrip.js"></script>
+</body>
+</html>
