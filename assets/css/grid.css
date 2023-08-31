@@ -16,7 +16,7 @@
     .container {
         max-width:720px
     }
-    
+
     .col-md {
         -ms-flex-preferred-size:0;
         flex-basis: 0;
@@ -110,6 +110,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .home-section {
+        padding-top: 120px;
+        padding-bottom: 55px;
+    }
+}
 
 @media (min-width: 992px) {
     .container {
@@ -156,6 +162,10 @@
 @media (min-width: 1200px) {
     .container {
         max-width:1140px
+    }
+
+    .navbar__nav {
+        align-items: center;
     }
 }
 

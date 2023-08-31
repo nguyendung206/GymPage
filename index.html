@@ -41,7 +41,7 @@
                                 <a href="#pricing">Gói</a>
                             </li>
                             <li class="btn__GS">
-                                <a href="">Đăng kí ngay</a>
+                                <button class="btn-register">Đăng kí ngay</button>
                             </li>
                         </ul>
                     </div>
@@ -87,7 +87,7 @@
                             <form id="register-form">
                                 <input type="text" class="register-input" required name="register-names" placeholder="Họ Và Tên*">
                                 <input type="email" class="register-input" required name="register-email" placeholder="Email*">
-                                <input type="text" class="register-input" required name="register-phone" placeholder="Số Điện Thoại*">
+                                <input type="tel" class="register-input" required name="register-phone" placeholder="Số Điện Thoại*">
                                 <input type="submit" class="register-submit" value="Đăng Kí Ngay!">
                             </form>
                             <p class="register-terms">Không cần thẻ tín dụng • Không cần cài đặt</p>
@@ -153,7 +153,7 @@
                     <h3>Hãy sẵn sàng để khám phá tất cả những lợi ích.</h3>
                     <p>Với các chương trình tập luyện đa dạng, sự hỗ trợ từ đội ngũ chuyên gia, và môi trường tạo động lực, bạn sẽ có cơ hội nâng cao sức khỏe, tinh thần và thay đổi cuộc sống một cách tích cực. Đến với chúng tôi để bắt đầu hành trình chăm sóc bản thân và thực hiện những mục tiêu mà bạn mong muốn.</p>
                     <p>Với môi trường thân thiện, chuyên nghiệp và các dịch vụ tập luyện đa dạng, chúng tôi đồng hành cùng bạn trên con đường đạt được sự cân bằng và thăng hoa toàn diện.</p>
-                    <a href="#home" class="btn-red">Đăng Kí Ngay</a>
+                    <button class="btn-red">Đăng Kí Ngay</button>
                 </div>
                 <div class="col-md-6">
                     <img src="./assets/img/discover.jpg" alt="" class="box-shadow top-margins-images width-100">
@@ -422,7 +422,7 @@
                                     Dinh dưỡng cân đối 
                                 </li>
                                 <li class="price-submit">
-                                    <button class="js-buy-ticket">DÙNG THỬ MIỄN PHÍ 15 NGÀY</button>
+                                    <button class="js-buy-ticket">MUA NGAY</button>
                                 </li>
                             </ul>
                         </div>
@@ -450,7 +450,7 @@
                                     Lịch trình linh hoạt và ổn định
                                 </li>
                                 <li class="price-submit">
-                                    <button class="js-buy-ticket">DÙNG THỬ MIỄN PHÍ 15 NGÀY</button>
+                                    <button class="js-buy-ticket">MUA NGAY</button>
                                 </li>
                             </ul>
                         </div>
@@ -477,7 +477,7 @@
                                     Tiết kiệm chi phí
                                 </li>
                                 <li class="price-submit">
-                                    <button class="js-buy-ticket">DÙNG THỬ MIỄN PHÍ 15 NGÀY</button>
+                                    <button class="js-buy-ticket">MUA NGAY</button>
                                 </li>
                             </ul>
                         </div>
@@ -491,14 +491,14 @@
     <div class="footer">
         <div class="container footer-top">
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center margin-bottom-20">
                     <i class="fa-solid fa-map-location-dot"></i>
                     <h5>Thông Tin Liên Lạc</h5>
                     <p>10 Oxford Street, London, UK, E1 1EC</p>
                     <p><a href="#">the-office@leadpage.co.uk</a></p>
                     <p>+44 987 654 321</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center margin-bottom-20">
                     <i class="fa-solid fa-comment-dots"></i>
                     <h5>Mạng Xã Hội</h5>
                     <p>Xem dưới đây nơi bạn có thể tìm thấy chúng tôi.</p>
@@ -530,7 +530,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center margin-bottom-20">
                     <i class="fa-solid fa-link"></i>
                     <h5>Liên kết hữu ích</h5>
                     <a class="footer-links" href="#">Chính Sách Cookies Của Chúng Tôi</a>
@@ -552,33 +552,41 @@
                 Đăng Kí              
             </header>
             <div class="modal-body">
-                <label for="ticket-name" class="modal-lable">
-                    <i class="fa-solid fa-user"></i>
-                    Họ Và Tên
-                </label>
-                <input id="ticket-name" type="text" class="modal-input" placeholder="Tên của bạn*">
-                
-                <label for="ticket-email" class="modal-lable">
-                    <i class="fa-solid fa-envelope"></i>
-                    Email
-                </label>
-                <input id="ticket-email" type="email" class="modal-input" placeholder="Địa chỉ email*">
-                
-                <label for="ticket-phone" class="modal-lable">
-                    <i class="fa-solid fa-phone"></i>
-                    Số Điện Thoại
-                </label>
-                <input id="ticket-phone" type="text" class="modal-input" placeholder=" Số Điện Thoại*">
-                
-                <label for="prices" class="modal-price">Gói Bạn Muốn Trải Nghiệm: </label>
-                <select id="prices">
-                    <option value="$15">$15 - Mỗi Ngày</option>
-                    <option value="$99">$99 - Mỗi Tháng</option>
-                    <option value="$199">$199 - Mỗi Năm</option>
-                </select>
-                <button id="buy-ticket">
-                    GỬI <i class="fa-solid fa-check"></i>
-                </button>
+                <p class="buy-failure" style="display: none;">
+                    Vui lòng nhập đầy đủ thông tin!
+                </p>
+                <p class="buy-success" style="display: none;">
+                    Cảm ơn đã ủng hộ và tin tưởng dịch vụ của GymPage.
+                </p>
+                <form class="modal-form">
+                    <label for="ticket-name" class="modal-lable">
+                        <i class="fa-solid fa-user"></i>
+                        Họ Và Tên
+                    </label>
+                    <input id="ticket-name" type="text" class="modal-input" placeholder="Tên của bạn*">
+                    
+                    <label for="ticket-email" class="modal-lable">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Địa chỉ email*">
+                    
+                    <label for="ticket-phone" class="modal-lable">
+                        <i class="fa-solid fa-phone"></i>
+                        Số Điện Thoại
+                    </label>
+                    <input id="ticket-phone" type="tel" class="modal-input" placeholder=" Số Điện Thoại*">
+                    
+                    <label for="prices" class="modal-price">Gói Bạn Muốn Trải Nghiệm: </label>
+                    <select id="prices">
+                        <option value="$15">$15 - Mỗi Ngày</option>
+                        <option value="$99">$99 - Mỗi Tháng</option>
+                        <option value="$199">$199 - Mỗi Năm</option>
+                    </select>
+                    <button id="buy-ticket">
+                        GỬI <i class="fa-solid fa-check"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </div>

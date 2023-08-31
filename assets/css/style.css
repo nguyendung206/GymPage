@@ -71,6 +71,10 @@ h5 {
     margin-top: 20px;
 }
 
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
 .white-text {
     color: #fff;
 }
@@ -165,7 +169,6 @@ h5 {
 }
 
 
-
 .navbar__nav {
     display: flex;
     padding-left: 0px;
@@ -182,7 +185,7 @@ h5 {
     padding: 10px 15px;
 }
 
-.btn__GS a {
+.btn__GS button {
     background-color: #e52a3d;
     border: 2px solid #e52a3d;
     border-radius: 8px;
@@ -190,6 +193,9 @@ h5 {
     margin-right: 15px;
     margin-left: 10px;
     padding: 12px 18px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar__nav>li>a:hover {
@@ -197,10 +203,11 @@ h5 {
     transition: all 0.5s ease;
 }
 
-.btn__GS a:hover {
+.btn__GS button:hover {
     color: #e52a3d;
     background: transparent;
     border: 2px solid #e52a3d;
+    transition: all .5s ease;
 }
 
 .qpaque {
@@ -430,6 +437,7 @@ p.register-terms {
     padding: 14px 20px;
     color: #fff;
     display: inline-block;
+    cursor: pointer;
 }
 
 ul.benefits {
@@ -776,6 +784,7 @@ ul.benefits li i {
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 9999;
 }
 
 .modal.open {
@@ -823,6 +832,21 @@ ul.benefits li i {
     padding: 16px;
 }
 
+.buy-success {
+    color: #000;
+}
+
+.buy-failure {
+    font-weight: bold;
+    background-color: #fff;
+    color: #FF3333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #FF3333;
+    border-radius: 4px;
+    /* animation: alertFadein ease .5s; */
+}
+
 .modal-lable {
     display: block;
     font-size: 15px;
@@ -845,7 +869,7 @@ ul.benefits li i {
 
 #prices {
     font-size: 15px;
-    padding: 8px;
+    padding: 9px;
     cursor: pointer;
 }
 
@@ -875,3 +899,14 @@ ul.benefits li i {
         transform: translateY(0);
     }
 }
+
+/* @keyframes alertFadein {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
